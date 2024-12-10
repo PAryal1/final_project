@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dog Image Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+  </head>
+  <body>
+    <h1>Random Dog Image Viewer</h1>
+    <button id="fetch-dog">Get a Random Dog Picture</button>
+    <div class="separator">
+      <hr />
+      <span>Or</span>
+      <hr />
+    </div>
+    <section id="dog-section">
+      <input
+        type="text"
+        id="dog-search"
+        placeholder="Search Dog Breed..."
+        list="dog-breeds"
+      />
+      <datalist id="dog-breeds"></datalist>
+      <button id="search-button">Get Picture</button>
+      <div id="dog-results"></div>
+    </section>
+
+    <section>
+      <img id="dog-image" src="" alt="Dog" hidden width="300" height="300" />
+      <div id="dog-name"></div>
+      <div id="loading">Loading...</div>
+    </section>
+
+    <footer>
+      <p>Developed by Praniti Aryal</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

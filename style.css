@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%) no-repeat;
+  padding: 20px;
+  min-height: 100vh;
+  animation: fadeIn 1.5s ease-in;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#dog-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: scaleUp 0.8s ease-in-out;
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#dog-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fa6267;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6a6f;
+  transform: scale(1.1);
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 8px;
+}
+
+#loading {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 20px;
+  display: none;
+  height: 300;
+  width: 300;
+}
+
+.separator {
+  display: flex;
+  gap: 3px;
+  margin: 12px 0;
+}
+
+.separator span {
+  margin: 0 10px;
+  color: #fff;
+}
+
+hr {
+  border: 1px solid #0057b312;
+  flex: 1;
+}
+
+footer {
+  margin-top: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
